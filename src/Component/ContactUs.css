@@ -1,0 +1,32 @@
+.contact-detail {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto; /* Adjust height to auto for responsiveness */
+  }
+  
+  .contact-detail::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgb(210, 243, 235, 1), rgba(230, 250, 245, .3));
+    border-radius: 10px;
+    z-index: -1;
+  }
+  
+  .contact-map {
+    background-image: url("/public/img/img3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .contact-form {
+    background-image: url("/public/img/img3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  

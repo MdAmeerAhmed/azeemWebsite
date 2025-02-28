@@ -1,0 +1,83 @@
+/* Newsletter Section */
+#sp-section-36 {
+    padding: 40px 0;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(67, 4, 177) , rgb(126, 132, 243));
+}
+
+/* Form Styling */
+#userform {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Form Title */
+.sp-module-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#userform input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#userform input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Help Text */
+.form-help {
+    font-size: 14px;
+    color: #888;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Error Message */
+.text-danger {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* CAPTCHA Section */
+.cf-turnstile {
+    margin: 15px 0;
+    text-align: center;
+}
+
+/* Submit Button */
+#userform button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#userform button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #userform {
+        padding: 15px;
+    }
+}

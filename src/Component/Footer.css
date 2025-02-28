@@ -1,0 +1,52 @@
+/* Footer link hover effect */
+.footer .short-link a,
+.footer .help-link a,
+.footer .contact-link a {
+  transition: letter-spacing 0.5s, color 0.3s;
+}
+
+/* Hover on links in Short, Help, Contact sections */
+.footer .short-link a:hover,
+.footer .help-link a:hover,
+.footer .contact-link a:hover {
+  letter-spacing: 1px;
+  color: var(--bs-secondary); /* Change link color on hover */
+}
+
+/* Social media icon buttons hover effect */
+.footer .hightech-link a {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.footer .hightech-link a:hover {
+  background: var(--bs-secondary); /* Change background on hover */
+  border: 0;
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Social Media Icon Size */
+.footer .hightech-link a i {
+  font-size: 1.5rem;
+}
+
+/* Social media icons hover effect */
+.footer .hightech-link a:hover {
+  background-color: var(--bs-secondary); /* Change background on hover */
+  transform: scale(1.1); /* Zoom in slightly on hover */
+}
+
+/* Social media links spacing */
+.footer .hightech-link a {
+  margin-bottom: 10px;
+}
+
+.footer .hightech-link a:hover i {
+  color: white; /* Change icon color on hover */
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 768px) {
+  .footer .hightech-link a {
+    margin-bottom: 10px; /* Space out the icons */
+  }
+}

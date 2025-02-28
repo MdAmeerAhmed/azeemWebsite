@@ -1,0 +1,84 @@
+  
+  .carousel-inner {
+    overflow: visible !important;
+  }
+  .carousel {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+  }
+/* Optional: Customizing animation speed */
+.animate__fadeIn {
+  animation-duration: 1s; /* You can adjust the duration */
+  animation-delay: 0.5s; /* Optional: delay before animation starts */
+}  
+  /* Ensure the caption is on top */
+  .carousel-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    z-index: 2; /* Ensure caption appears above the overlay */
+    color: white;
+    margin-bottom:190px !important; ;
+  }
+
+  .carousel-caption h1, .carousel-caption h6, .carousel-caption a {
+    padding: 0 15px;
+  }
+  .carousel-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 3; /* Higher z-index for text */
+    color: white; /* Ensure text is white */
+  }
+  
+  .carousel-content h5 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    z-index: 3; /* Higher z-index for text */
+    color: white; /* Ensure text is white */
+  }
+  
+  .sppb-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .sppb-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Remove bullet points from carousel indicators */
+  .carousel-indicators {
+    list-style-type: none; /* Removes default bullet points */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* .carousel-indicators li {
+    width: 30px;
+    height: 10px;
+    background: var(--bs-primary);
+    margin: 5px;
+    border-radius: 30px;
+    opacity: 1;
+    cursor: pointer;
+  }  */
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sppb-carousel-text h2 {
+      font-size: 28px;
+    }
+    .sppb-carousel-text h5 {
+      font-size: 14px;
+    }
+  }
+  

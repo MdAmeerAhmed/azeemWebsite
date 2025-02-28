@@ -1,0 +1,133 @@
+/* Navbar Styles */
+.navbar {
+  padding: 15px 0;
+}
+
+.navbar.scrolled {
+  background-color: var(--bs-light);
+}
+
+.nav-link.dropdown-toggle::after {
+  display: none !important; /* Remove Bootstrap's default down arrow */
+}
+
+.dropdown a {
+  transition: all 0.4s;
+}
+
+.navbar .navbar-brand h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.fixed-dropdown {
+  position: absolute; 
+  top: 60px;  
+  left: 50%;  
+  transform: translateX(-50%); 
+  width: 400px;  
+  max-width: 90%;  
+  z-index: 1050;  
+  min-height: 250px;  
+  display: none;  
+}
+
+/* Show only the active dropdown */
+.nav-item:hover .fixed-dropdown {
+  display: block !important;
+}
+
+.nav-item:hover .dropdown-menu {
+  opacity: 1;
+}
+
+
+.dropdown-menu {
+  min-width: 600px; 
+  background-color: var(--bs-light);
+  border-radius: 0px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+  display: none; 
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 10px;
+  color: var(--bs-white);
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--bs-secondary) !important;
+}
+
+/* Dropdown Menu */
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    top: 100%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* Contact & Search Section */
+.navbar .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--bs-white);
+  font-size: 14px;
+}
+
+.navbar .search-icon {
+  font-size: 20px;
+  color: var(--bs-white);
+  cursor: pointer;
+}
+
+.navbar .phone-icon {
+  font-size: 22px;
+  color: var(--bs-white);
+  position: relative;
+}
+
+.navbar .phone-icon .comment-icon {
+  position: absolute;
+  top: -7px;
+  left: 20px;
+  color: var(--bs-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .navbar .navbar-collapse {
+    background-color: var(--bs-primary);
+    padding: 15px;
+  }
+}
